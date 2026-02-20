@@ -1,0 +1,29 @@
+[package]
+name = "dateno-duckdb-ext"
+version = "0.1.0"
+edition = "2021"
+authors = ["CommonData.io"]
+description = "DuckDB extension for Dateno dataset search"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/commondataio/dateno-duckdb"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+duckdb = { version = "1.4", features = ["vtab"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls", "blocking"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["rt-multi-thread"] }
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "1.0"
+url = "2.5"
+
+[dev-dependencies]
+mockito = "1.2"
+wiremock = "0.6"
+
+[features]
+default = []
+integration-tests = []

@@ -1,0 +1,17 @@
+name = "dateno"
+version = "0.1.0"
+duckdb_version = ">=0.10.0"
+platforms = [
+    "linux_amd64",
+    "linux_arm64",
+    "osx_amd64",
+    "osx_arm64",
+    "windows_amd64"
+]
+description = "Dateno dataset search integration for DuckDB"
+repository = "https://github.com/commondataio/dateno-duckdb"
+license = "MIT OR Apache-2.0"
+
+[metadata]
+author = "CommonData.io"
+homepage = "https://github.com/commondataio/dateno-duckdb"

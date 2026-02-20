@@ -1,0 +1,27 @@
+{
+  "total": 2,
+  "results": [
+    {
+      "id": "dataset-1",
+      "title": "Climate Data 2023",
+      "description": "Annual climate data for 2023",
+      "format": "CSV",
+      "source": "NOAA",
+      "url": "https://example.com/dataset-1.csv",
+      "created_at": "2023-01-15T10:00:00Z",
+      "updated_at": "2023-12-31T23:59:59Z",
+      "formats": ["CSV", "JSON"]
+    },
+    {
+      "id": "dataset-2",
+      "title": "Temperature Records",
+      "description": "Historical temperature records",
+      "format": "Parquet",
+      "source": "NASA",
+      "url": "https://example.com/dataset-2.parquet",
+      "created_at": "2022-06-01T08:00:00Z",
+      "updated_at": null,
+      "formats": ["Parquet"]
+    }
+  ]
+}

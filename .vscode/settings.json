@@ -1,0 +1,10 @@
+{
+  "rust-analyzer": {
+    "cargo": {
+      "features": ["vtab"]
+    },
+    "checkOnSave": {
+      "command": "clippy"
+    }
+  }
+}
